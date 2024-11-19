@@ -9,12 +9,15 @@ interface IExpense extends Document{
 const Expense = new Schema<IExpense>({
     description:{
         type: String,
-        maxLength: 100,
+        maxLength: 200,
+        minlength:10,
         required: true,
+        trim: true
     },
     amount:{
         type: Number,
         required: true,
+        min:0
     },
     date:{
         type: Date,

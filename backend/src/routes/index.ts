@@ -1,5 +1,5 @@
 import { Router } from "express";
-import expense from "./expense";
+import expense from "./Expense";
 
 const router = Router();
 
