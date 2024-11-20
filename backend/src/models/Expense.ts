@@ -10,14 +10,14 @@ const Expense = new Schema<IExpense>({
     description:{
         type: String,
         maxLength: 200,
-        minlength:10,
+        minlength: 3,
         required: true,
         trim: true
     },
     amount:{
         type: Number,
         required: true,
-        min:0
+        min:1
     },
     date:{
         type: Date,
